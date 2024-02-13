@@ -8,7 +8,8 @@
 		"package": "svelte-kit sync && svelte-package && publint",
 		"prepublishOnly": "npm run package",
 		"lint": "prettier --check . && eslint .",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"gh-pages": "npm run build && npx gh-pages -d build"
 	},
 	"exports": {
 		".": {
